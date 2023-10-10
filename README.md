@@ -7,7 +7,7 @@ Setting up Project
 2. Open project in intellij
 3. From the terminal, run `sbt clean compile`
 
-Running project
+Running project 
 1. Once project is opened go to scr->main->scala->shard.scala
 2. In shard.scala is the implementation for creating csv and sharding csv
 3. Change path for "val originalGraph" and "val perturbedGraph" on lines 15, 16 to Example: `C:\\Users\\your-user-profile\\your-directory\\NetGameSim\\`
