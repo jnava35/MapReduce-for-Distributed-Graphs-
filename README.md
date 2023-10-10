@@ -20,4 +20,7 @@ Running project
 
 # Requirements
 1. Generate a .ngs and .perturbed files
-2. Load in those files to compare original against perturbed 
+2. Load in those files to compare original against perturbed
+
+# Limitations
+1. User working on macOS will have to setup their path's differently 
