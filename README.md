@@ -12,7 +12,7 @@ Running project
 2. In shard.scala is the implementation for creating csv and sharding csv
 3. Change path for "val originalGraph" and "val perturbedGraph" on lines 15, 16 to: Example `C:\\Users\\your-user-profile\\your-directory\\NetGameSim\\`
 4. Change path for "val writer" on line 29: Example `C:\\Users\\your-user-profile\\your-directory\\combinedComparison.csv`
-5. Create a new folder called `shardedCSV`
-6. Change path for shardCVS() on line 86 to path of step (4) and add the path of where you created the shardedCSV folder
+5. Create a new folder called `shardedCSV` outside of the program. Anywhere in file explorer
+6. Change path for shardCVS() on line 86 to the path of step (4). Then add the path of where you created the shardedCSV folder
 7. 
  
