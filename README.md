@@ -4,7 +4,7 @@ NetID: jnava35@uic.edu | UIN: 660115946 | Repo for HW 1 CS 441
 
 Setting up Project
 1. Download repo from git
-2. Open project in intellij
+2. Open project in intelliJ
 3. From the terminal, run `sbt clean compile`
 
 Running project 
@@ -14,5 +14,5 @@ Running project
 4. Change path for "val writer" on line 29 Example: `C:\\Users\\your-user-profile\\your-directory\\combinedComparison.csv`
 5. Create a new folder called `shardedCSV` outside of the program, anywhere in file explorer
 6. Change path for shardCVS() on line 86 to the path of step (4). Then add the path of where you created the shardedCSV folder
-7. 
+7. To start running program on intelliJ there will be a green run arrow on line 6 for def main(). Press on the green arrow to run program
  
