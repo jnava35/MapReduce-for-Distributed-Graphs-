@@ -1,0 +1,58 @@
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] IncrementalCompile -----------[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncrementalCompile.incrementalCompile[0m
+[0m[[0m[0mdebug[0m] [0m[0mprevious = Stamps for: 0 products, 0 sources, 0 libraries[0m
+[0m[[0m[0mdebug[0m] [0m[0mcurrent source = Set(${BASE}/Main.scala, ${BASE}/otherObject.scala, ${BASE}/thisObject.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> initialChanges = InitialChanges(Changes(added = Set(${BASE}/Main.scala, ${BASE}/otherObject.scala, ${BASE}/thisObject.scala), removed = Set(), changed = Set(), unmodified = ...),Set(),Set(),API Changes: Set())[0m
+[0m[[0m[0mdebug[0m] [0m[0mFull compilation, no sources in previous analysis.[0m
+[0m[[0m[0mdebug[0m] [0m[0mall 3 sources are invalidated[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: [0m
+[0m[[0m[0mdebug[0m] [0m[0mRecompiling all sources: number of invalidated sources > 50.0 percent of all sources[0m
+[0m[[0m[0mdebug[0m] [0m[0mcompilation cycle 1[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 3 Scala sources to C:\Users\fatjj\Documents\(6) UIC Fall 2023\CS 441 Fall 2023\NetGameSim\src\main\scala\target\scala-2.12\classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mGetting org.scala-sbt:compiler-bridge_2.12:1.9.3:compile for Scala 2.12.18[0m
+[0m[[0m[0minfo[0m] [0m[0mNon-compiled module 'compiler-bridge_2.12' for Scala 2.12.18. Compiling...[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating plain compiler interface for 2.12.18.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  > Arguments: [0m
+[0m[[0m[0mdebug[0m] [0m[0m	-d[0m
+[0m[[0m[0mdebug[0m] [0m[0m	C:\Users\fatjj\AppData\Local\Temp\sbt_b91f01cc[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-nowarn[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-bootclasspath[0m
+[0m[[0m[0mdebug[0m] [0m[0m	C:\Users\fatjj\.sbt\boot\scala-2.12.18\lib\scala-library.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-classpath[0m
+[0m[[0m[0mdebug[0m] [0m[0m	C:\Users\fatjj\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-sbt\compiler-interface\1.9.3\compiler-interface-1.9.3.jar;C:\Users\fatjj\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-sbt\util-interface\1.9.2\util-interface-1.9.2.jar;C:\Users\fatjj\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-sbt\compiler-bridge_2.12\1.9.3\compiler-bridge_2.12-1.9.3-sources.jar;C:\Users\fatjj\.sbt\boot\scala-2.12.18\lib\scala-compiler.jar;C:\Users\fatjj\.sbt\boot\scala-2.12.18\lib\scala-reflect.jar;C:\Users\fatjj\.sbt\boot\scala-2.12.18\lib\scala-xml_2.12-2.1.0.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	C:\Users\fatjj\AppData\Local\Temp\sbt_7e906260\scala\ZincCompat.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	C:\Users\fatjj\AppData\Local\Temp\sbt_7e906260\xsbt\API.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	C:\Users\fatjj\AppData\Local\Temp\sbt_7e906260\xsbt\AbstractZincFile.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	C:\Users\fatjj\AppData\Local\Temp\sbt_7e906260\xsbt\Analyzer.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	C:\Users\fatjj\AppData\Local\Temp\sbt_7e906260\xsbt\CallbackGlobal.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	C:\Users\fatjj\AppData\Local\Temp\sbt_7e906260\xsbt\ClassName.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	C:\Users\fatjj\AppData\Local\Temp\sbt_7e906260\xsbt\Compat.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	C:\Users\fatjj\AppData\Local\Temp\sbt_7e906260\xsbt\CompilerBridge.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	C:\Users\fatjj\AppData\Local\Temp\sbt_7e906260\xsbt\ConsoleBridge.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	C:\Users\fatjj\AppData\Local\Temp\sbt_7e906260\xsbt\DelegatingReporter.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	C:\Users\fatjj\AppData\Local\Temp\sbt_7e906260\xsbt\Dependency.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	C:\Users\fatjj\AppData\Local\Temp\sbt_7e906260\xsbt\ExtractAPI.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	C:\Users\fatjj\AppData\Local\Temp\sbt_7e906260\xsbt\ExtractUsedNames.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	C:\Users\fatjj\AppData\Local\Temp\sbt_7e906260\xsbt\GlobalHelpers.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	C:\Users\fatjj\AppData\Local\Temp\sbt_7e906260\xsbt\InteractiveConsoleBridge.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	C:\Users\fatjj\AppData\Local\Temp\sbt_7e906260\xsbt\InteractiveConsoleFactoryBridge.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	C:\Users\fatjj\AppData\Local\Temp\sbt_7e906260\xsbt\InteractiveConsoleHelper.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	C:\Users\fatjj\AppData\Local\Temp\sbt_7e906260\xsbt\InteractiveConsoleResponse.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	C:\Users\fatjj\AppData\Local\Temp\sbt_7e906260\xsbt\JarUtils.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	C:\Users\fatjj\AppData\Local\Temp\sbt_7e906260\xsbt\JavaUtils.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	C:\Users\fatjj\AppData\Local\Temp\sbt_7e906260\xsbt\LocalToNonLocalClass.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	C:\Users\fatjj\AppData\Local\Temp\sbt_7e906260\xsbt\LocateClassFile.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	C:\Users\fatjj\AppData\Local\Temp\sbt_7e906260\xsbt\Log.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	C:\Users\fatjj\AppData\Local\Temp\sbt_7e906260\xsbt\Message.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	C:\Users\fatjj\AppData\Local\Temp\sbt_7e906260\xsbt\PlainNioFile.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	C:\Users\fatjj\AppData\Local\Temp\sbt_7e906260\xsbt\ScaladocBridge.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m      [0m
+[0m[[0m[0minfo[0m] [0m[0m  Compilation completed in 11.953s.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler 5deb38c7 for Scala compiler version 2.12.18[0m
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] The Scala compiler is invoked with:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-bootclasspath[0m
+[0m[[0m[0mdebug[0m] [0m[0m	C:\Users\fatjj\.sbt\boot\scala-2.12.18\lib\scala-library.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-classpath[0m
+[0m[[0m[0mdebug[0m] [0m[0m	C:\Users\fatjj\Documents\(6) UIC Fall 2023\CS 441 Fall 2023\NetGameSim\src\main\scala\target\scala-2.12\classes[0m
+[0m[[0m[0mdebug[0m] [0m[0mCompilation failed (CompilerInterface)[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m

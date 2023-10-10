@@ -1,0 +1,115 @@
+[0m[[0m[31merror[0m] [0m[0mC:\Users\fatjj\Documents\(6) UIC Fall 2023\CS 441 Fall 2023\NetGameSim\src\main\scala\Main.scala:21:12: ';' expected but ':' found.[0m
+[0m[[0m[31merror[0m] [0m[0mobject Main:[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\fatjj\Documents\(6) UIC Fall 2023\CS 441 Fall 2023\NetGameSim\src\main\scala\Main.scala:23:3: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m  val ipAddr: InetAddress = InetAddress.getLocalHost[0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\fatjj\Documents\(6) UIC Fall 2023\CS 441 Fall 2023\NetGameSim\src\main\scala\Main.scala:24:3: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m  val hostName: String = ipAddr.getHostName[0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\fatjj\Documents\(6) UIC Fall 2023\CS 441 Fall 2023\NetGameSim\src\main\scala\Main.scala:25:3: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m  val hostAddress: String = ipAddr.getHostAddress[0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\fatjj\Documents\(6) UIC Fall 2023\CS 441 Fall 2023\NetGameSim\src\main\scala\Main.scala:27:3: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m  def main(args: Array[String]): Unit =[0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\fatjj\Documents\(6) UIC Fall 2023\CS 441 Fall 2023\NetGameSim\src\main\scala\Main.scala:29:5: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m    val outGraphFileName = if args.isEmpty then NGSConstants.OUTPUTFILENAME else args(0).concat(NGSConstants.DEFOUTFILEEXT)[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\fatjj\Documents\(6) UIC Fall 2023\CS 441 Fall 2023\NetGameSim\src\main\scala\Main.scala:30:5: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m    val perturbedOutGraphFileName = outGraphFileName.concat(".perturbed")[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\fatjj\Documents\(6) UIC Fall 2023\CS 441 Fall 2023\NetGameSim\src\main\scala\Main.scala:31:5: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m    logger.info(s"Output graph file is $outputDirectory$outGraphFileName and its perturbed counterpart is $outputDirectory$perturbedOutGraphFileName")[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\fatjj\Documents\(6) UIC Fall 2023\CS 441 Fall 2023\NetGameSim\src\main\scala\Main.scala:32:5: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m    logger.info(s"The netgraphsim program is run at the host $hostName with the following IP addresses:")[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\fatjj\Documents\(6) UIC Fall 2023\CS 441 Fall 2023\NetGameSim\src\main\scala\Main.scala:33:5: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m    logger.info(ipAddr.getHostAddress)[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\fatjj\Documents\(6) UIC Fall 2023\CS 441 Fall 2023\NetGameSim\src\main\scala\Main.scala:34:5: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m    NetworkInterface.getNetworkInterfaces.asScala[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\fatjj\Documents\(6) UIC Fall 2023\CS 441 Fall 2023\NetGameSim\src\main\scala\Main.scala:41:5: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m    val existingGraph = java.io.File(s"$outputDirectory$outGraphFileName").exists[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\fatjj\Documents\(6) UIC Fall 2023\CS 441 Fall 2023\NetGameSim\src\main\scala\Main.scala:42:5: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m    val g: Option[NetGraph] = if existingGraph then[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\fatjj\Documents\(6) UIC Fall 2023\CS 441 Fall 2023\NetGameSim\src\main\scala\Main.scala:43:7: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m      logger.warn(s"File $outputDirectory$outGraphFileName is located, loading it up. If you want a new generated graph please delete the existing file or change the file name.")[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\fatjj\Documents\(6) UIC Fall 2023\CS 441 Fall 2023\NetGameSim\src\main\scala\Main.scala:44:7: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m      NetGraph.load(fileName = s"$outputDirectory$outGraphFileName")[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\fatjj\Documents\(6) UIC Fall 2023\CS 441 Fall 2023\NetGameSim\src\main\scala\Main.scala:47:7: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m      logger.info("for the main entry")[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\fatjj\Documents\(6) UIC Fall 2023\CS 441 Fall 2023\NetGameSim\src\main\scala\Main.scala:48:7: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m      config.getConfig("NGSimulator").entrySet().forEach(e => logger.info(s"key: ${e.getKey} value: ${e.getValue.unwrapped()}"))[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\fatjj\Documents\(6) UIC Fall 2023\CS 441 Fall 2023\NetGameSim\src\main\scala\Main.scala:49:7: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m      logger.info("for the NetModel entry")[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\fatjj\Documents\(6) UIC Fall 2023\CS 441 Fall 2023\NetGameSim\src\main\scala\Main.scala:50:7: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m      config.getConfig("NGSimulator").getConfig("NetModel").entrySet().forEach(e => logger.info(s"key: ${e.getKey} value: ${e.getValue.unwrapped()}"))[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\fatjj\Documents\(6) UIC Fall 2023\CS 441 Fall 2023\NetGameSim\src\main\scala\Main.scala:51:7: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m      NetModelAlgebra()[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\fatjj\Documents\(6) UIC Fall 2023\CS 441 Fall 2023\NetGameSim\src\main\scala\Main.scala:53:5: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m    if g.isEmpty then logger.error("Failed to generate a graph. Exiting...")[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\fatjj\Documents\(6) UIC Fall 2023\CS 441 Fall 2023\NetGameSim\src\main\scala\Main.scala:56:7: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m      if !existingGraph then[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\fatjj\Documents\(6) UIC Fall 2023\CS 441 Fall 2023\NetGameSim\src\main\scala\Main.scala:57:9: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m        g.get.persist(fileName = outGraphFileName)[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\fatjj\Documents\(6) UIC Fall 2023\CS 441 Fall 2023\NetGameSim\src\main\scala\Main.scala:58:9: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m        logger.info(s"Generating DOT file for graph with ${g.get.totalNodes} nodes for visualization as $outputDirectory$outGraphFileName.dot")[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\fatjj\Documents\(6) UIC Fall 2023\CS 441 Fall 2023\NetGameSim\src\main\scala\Main.scala:59:9: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m        g.get.toDotVizFormat(name = s"Net Graph with ${g.get.totalNodes} nodes", dir = outputDirectory, fileName = outGraphFileName, outputImageFormat = Format.DOT)[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\fatjj\Documents\(6) UIC Fall 2023\CS 441 Fall 2023\NetGameSim\src\main\scala\Main.scala:60:9: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m        logger.info(s"A graph image file can be generated using the following command: sfdp -x -Goverlap=scale -Tpng $outputDirectory$outGraphFileName.dot > $outputDirectory$outGraphFileName.png")[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\fatjj\Documents\(6) UIC Fall 2023\CS 441 Fall 2023\NetGameSim\src\main\scala\Main.scala:61:7: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m      end if[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\fatjj\Documents\(6) UIC Fall 2023\CS 441 Fall 2023\NetGameSim\src\main\scala\Main.scala:63:7: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m      val perturbation: GraphPerturbationAlgebra#GraphPerturbationTuple = GraphPerturbationAlgebra(g.get.copy)[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\fatjj\Documents\(6) UIC Fall 2023\CS 441 Fall 2023\NetGameSim\src\main\scala\Main.scala:64:7: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m      perturbation._1.persist(fileName = perturbedOutGraphFileName)[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\fatjj\Documents\(6) UIC Fall 2023\CS 441 Fall 2023\NetGameSim\src\main\scala\Main.scala:66:7: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m      logger.info(s"Generating DOT file for graph with ${perturbation._1.totalNodes} nodes for visualization as $outputDirectory$perturbedOutGraphFileName.dot")[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\fatjj\Documents\(6) UIC Fall 2023\CS 441 Fall 2023\NetGameSim\src\main\scala\Main.scala:67:7: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m      perturbation._1.toDotVizFormat(name = s"Perturbed Net Graph with ${perturbation._1.totalNodes} nodes", dir = outputDirectory, fileName = perturbedOutGraphFileName, outputImageFormat = Format.DOT)[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\fatjj\Documents\(6) UIC Fall 2023\CS 441 Fall 2023\NetGameSim\src\main\scala\Main.scala:68:7: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m      logger.info(s"A graph image file for the perturbed graph can be generated using the following command: sfdp -x -Goverlap=scale -Tpng $outputDirectory$perturbedOutGraphFileName.dot > $outputDirectory$perturbedOutGraphFileName.png")[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\fatjj\Documents\(6) UIC Fall 2023\CS 441 Fall 2023\NetGameSim\src\main\scala\Main.scala:70:7: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m      val modifications:ModificationRecord = perturbation._2[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\fatjj\Documents\(6) UIC Fall 2023\CS 441 Fall 2023\NetGameSim\src\main\scala\Main.scala:71:7: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m      GraphPerturbationAlgebra.persist(modifications, outputDirectory.concat(outGraphFileName.concat(".yaml"))) match[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\fatjj\Documents\(6) UIC Fall 2023\CS 441 Fall 2023\NetGameSim\src\main\scala\Main.scala:73:9: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m        case Right(value) =>[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\fatjj\Documents\(6) UIC Fall 2023\CS 441 Fall 2023\NetGameSim\src\main\scala\Main.scala:75:11: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m          logger.info(s"Done! Please check the content of the output directory $outputDirectory")[0m
+[0m[[0m[31merror[0m] [0m[0m          ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\fatjj\Documents\(6) UIC Fall 2023\CS 441 Fall 2023\NetGameSim\src\main\scala\otherObject.scala:26:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mdef processFile(): Unit = {[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\fatjj\Documents\(6) UIC Fall 2023\CS 441 Fall 2023\NetGameSim\src\main\scala\thisObject.scala:24:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mdef processFile(): Unit = {[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m38 errors found[0m
