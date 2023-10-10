@@ -16,7 +16,7 @@ Running project
 6. Change path for shardCVS() on line 86 to the path of step (4). Then add the path of where you created the shardedCSV folder
 7. To start running program on intelliJ there will be a green run arrow on line 6 for def main(). Press on the green arrow to run program
 8. Open `combinedComparison.csv` to view all original vs perturbed nodes data in a single csv
-9. Open `shardedCSV` file to view all sharded original vs perturbed node data distributed in multiple csv files 
+9. Open `shardedCSV` folder to view all sharded original vs perturbed node data distributed in multiple csv files 
 
 # Requirements
 1. Generate a .ngs and .perturbed files
