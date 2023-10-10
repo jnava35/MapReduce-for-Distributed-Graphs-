@@ -8,7 +8,7 @@ object extract {
     generateFile.processFile()
   }
 }
-// class
+// class,
 class GenerateFile {
   def processFile(): Unit = {
     // Load the ngs files for original and perturbed
@@ -91,8 +91,8 @@ class GenerateFile {
         println("Error: Original graph file not fond or could not be loaded.")
     }
   } // end of processFile
+
   def compareNodes(originalNode: NodeObject, perturbedNode: NodeObject): Boolean = {
-    // Compare properties and return true if nodes are considered equal, false otherwise
     originalNode.props == perturbedNode.props
   }
 
@@ -100,53 +100,50 @@ class GenerateFile {
   def shardCSV(inputFileName: String, outputDirectory: String, shardSize: Int): Unit = {
     import scala.io.Source
 
+    // Read the input CSV file and store  in a list.
     val source = Source.fromFile(inputFileName)
     val lines = source.getLines().toList
     source.close()
 
+    // Calculate the number of shardss
     val numberOfShards = math.ceil(lines.size.toDouble / shardSize).toInt
 
-    /*
-      for (shardIndex <- 0 until numberOfShards) {
-          val startIdx = shardIndex * shardSize
-          val endIdx = math.min((shardIndex + 1) * shardSize, lines.size)
-          val shard = lines.slice(startIdx, endIdx)
-
-          val shardFileName = s"${outputDirectory}shard_$shardIndex.csv"
-          val writer = new BufferedWriter(new FileWriter(shardFileName))
-          shard.foreach { line =>
-            writer.write(line)
-            writer.newLine()
-          }
-          writer.close()
-        }
-     */
-
+    // Iterate over the shard and create separate shard files.
     (0 until numberOfShards).foreach { shardIndex =>
+      // start and end indices for the current shard.
       val startIdx = shardIndex * shardSize
       val endIdx = math.min((shardIndex + 1) * shardSize, lines.size)
+
+      // extract the lines for the current shard.
       val shard = lines.slice(startIdx, endIdx)
 
+      // Define the filename for the current shard.
       val shardFileName = s"${outputDirectory}shard_$shardIndex.csv"
+
+      // write the shard to a new file.
       val writer = new BufferedWriter(new FileWriter(shardFileName))
+
+      // Write each line of the shard to the shard file.
       shard.foreach { line =>
         writer.write(line)
         writer.newLine()
       }
+      // Close the writer for the current shard file.
       writer.close()
     }
   }
 
+}
+  //--------------------------------------------------------
   def simRank(originalNode: NodeObject, perturbedNode: NodeObject): Double = {
-    // Define a weight for each property (you can adjust these weights)
-    val weightChildren = 1.0
-    val weightProps = 1.0
-    val weightCurrentDepth = 1.0
-    val weightPropValueRange = 1.0
-    val weightMaxDepth = 1.0
-    val weightMaxBranchingFactor = 1.0
-    val weightMaxProperties = 1.0
-    val weightStoredValue = 1.0
+    val children = 1.0
+    val props = 1.0
+    val currentDepth = 1.0
+    val propValueRange = 1.0
+    val maxDepth = 1.0
+    val maxBranchingFactor = 1.0
+    val maxProperties = 1.0
+    val storedValue = 1.0
 
     // Calculate individual similarity scores for each property
     val similarityChildren = compareProperty(originalNode.children, perturbedNode.children)
@@ -159,33 +156,31 @@ class GenerateFile {
     val similarityStoredValue = compareProperty(originalNode.storedValue, perturbedNode.storedValue)
 
     // Calculate the weighted average similarity score
-    val weightedSum = (weightChildren * similarityChildren) +
-      (weightProps * similarityProps) +
-      (weightCurrentDepth * similarityCurrentDepth) +
-      (weightPropValueRange * similarityPropValueRange) +
-      (weightMaxDepth * similarityMaxDepth) +
-      (weightMaxBranchingFactor * similarityMaxBranchingFactor) +
-      (weightMaxProperties * similarityMaxProperties) +
-      (weightStoredValue * similarityStoredValue)
+    val weightedSum = (children * similarityChildren) +
+      (props * similarityProps) +
+      (currentDepth * similarityCurrentDepth) +
+      (propValueRange * similarityPropValueRange) +
+      (maxDepth * similarityMaxDepth) +
+      (maxBranchingFactor * similarityMaxBranchingFactor) +
+      (maxProperties * similarityMaxProperties) +
+      (storedValue * similarityStoredValue)
 
-    val totalWeight =
-      weightChildren + weightProps + weightCurrentDepth + weightPropValueRange +
-        weightMaxDepth + weightMaxBranchingFactor + weightMaxProperties + weightStoredValue
+    val totalValue =
+      children + props + currentDepth + propValueRange +
+        maxDepth + maxBranchingFactor + maxProperties + storedValue
 
-    val overallSimilarityScore = weightedSum / totalWeight
+    val overallSimilarityScore = weightedSum / totalValue
 
     overallSimilarityScore
   }
 
-  // Method to compare two properties and assign a score
+  // compare two properties and assign a score
   def compareProperty(property1: Any, property2: Any): Double = {
-    // Compare property1 and property2 and return a score (e.g., 0 for dissimilar, 1 for identical)
-    // You can define your own logic for property comparison
+    // Compare property1 and property2
     if (property1 == property2) {
       1.0 // Properties are identical
     } else {
-      0.0 // Properties are dissimilar
+      0.0 // Properties are different
     }
-  }
 }
 
