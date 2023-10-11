@@ -27,7 +27,7 @@ Running project
 6. Create the mapper and the reducer for each task
 7. Create and run your software application using Apache Hadoop to test mapper/reducer
 8. Deploy it and run it on the Amazon Elastic MapReduce (EMR)
-9. More info on project here: [HW1](https://github.com/0x1DOCD00D/CS441_Fall2023/blob/main/Homework1.md#the-goal-of-this-homework-is-for-students-to-gain-experience-with-solving-a-distributed-computational-problem-using-cloud-computing-technologies-the-main-textbook-group-option-1-will-design-and-implement-an-instance-of-the-mapreduce-computational-model-using-aws-emr-whereas-the-alternative-textbook-group-option-2-will-use-the-corba-model-you-can-check-your-textbook-option-in-the-corresponding-column-of-the-gradebook-on-the-blackboard)
+9. More info on project here: [HW1 Main Textbok Group](https://github.com/0x1DOCD00D/CS441_Fall2023/blob/main/Homework1.md#the-goal-of-this-homework-is-for-students-to-gain-experience-with-solving-a-distributed-computational-problem-using-cloud-computing-technologies-the-main-textbook-group-option-1-will-design-and-implement-an-instance-of-the-mapreduce-computational-model-using-aws-emr-whereas-the-alternative-textbook-group-option-2-will-use-the-corba-model-you-can-check-your-textbook-option-in-the-corresponding-column-of-the-gradebook-on-the-blackboard)
 
 # Limitations
 1. User working on macOS will have to setup their path's differently 
