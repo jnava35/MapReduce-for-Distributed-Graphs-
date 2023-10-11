@@ -1,6 +1,6 @@
 # Jose Nava
 
-NetID: jnava35@uic.edu | UIN: 660115946 | Repo for HW 1 CS 441
+NetID: jnava35@uic.edu | UIN: 660115946 | Repo for HW1 CS 441
 
 Setting up Project
 1. Download repo from git
