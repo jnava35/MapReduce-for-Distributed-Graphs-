@@ -21,6 +21,11 @@ Running project
 # Requirements
 1. Generate a .ngs and .perturbed files
 2. Load in those files to compare original against perturbed
+3. Create a csv file of original and perturbed data node
+4. Shard the file into smaller sections
+5. Create a simRank algorithm to figure out which comparison of original and perturbed graph are similar based on there properties
+6. Create the mapper and the reducer for each task
+7. 
 
 # Limitations
 1. User working on macOS will have to setup their path's differently 
