@@ -1,0 +1,7 @@
+Student - Jose Nava
+
+=> No scalatests, Hardcoded paths for filepaths and filenames, Core functionalities not implemented (Map/Reduce+Simrank+Comparisions with OG YAML+AWS) = -10%
+
+I would've liked to see some implementation of map/reduce, even if it was a basic example program. Unfortunately, at this stage, while how much you've implemented is relatively good, it doesn't achieve what this homework was given for.
+
+Grade = 5%
